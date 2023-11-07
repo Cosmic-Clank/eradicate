@@ -35,12 +35,14 @@ const HpyloriSymptoms = ({ navigation }) => {
         <Text style={styles.bulletTextTitle}>
           {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.content.textBlock2}
         </Text>
-        <Text style={styles.bulletTextContent}>
+        <Text style={styles.bulletTextTitle}>
           {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.content.textBlock3}
         </Text>
+        <Image source={IMAGES.hpylori_donts} style={{ width: '100%', height: 500, resizeMode: 'contain', marginBottom: 30 }} />
         <Text style={styles.bulletTextTitle}>
           {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.content.textBlock4}
         </Text>
+        <Image source={IMAGES.hpylori_dos} style={{ width: '100%', height: 500, resizeMode: 'contain', marginBottom: 30 }} />
         <Text style={styles.bulletTextContent}>
           {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.content.textBlock5}
         </Text>

@@ -37,7 +37,7 @@ export default {
 					title: 'H. pylori infection',
 					content: {
 						textBlock1: 'H. pylori infections are thought to spread from one person’s mouth to another for example, a person does not wash his or her hands thoroughly after using the bathroom.',
-						textBlock2: '• They may also be transferred from feces to the mouth, sharing the same cup or sharing same inhaler amongst siblings\n\n• Also, it is possible to be infected by H. pylori that is present in contaminated water or food\n\n • Your risk for the infection is associated with your environment and living conditions'
+						textBlock2: '• They may also be transferred from feces to the mouth, sharing the same cup or sharing same inhaler amongst siblings.\n\n• Also, it is possible to be infected by H. pylori that is present in contaminated water or food.\n\n • Your risk for the infection is associated with your environment and living conditions.\n\n\n\n\n\n\n'
 					}
 				},
 				symptoms: {
@@ -45,7 +45,7 @@ export default {
 					title: 'H. pylori Symptoms',
 					content: {
 						textBlock1: 'Although H. pylori infection can be asymptomatic, symptoms include:',
-						textBlock2: '• Bloating\n• Abdominal pain\n• Lack of appetite\n• Heartburn\n• Indigestion\n• Nausea\n• Bleeding'
+						textBlock2: '• Bloating\n• Abdominal pain\n• Lack of appetite\n• Heartburn\n• Indigestion\n• Nausea\n• Bleeding\n\n\n\n\n\n\n'
 					}
 				},
 				pepticUlcerDisease: {
@@ -53,11 +53,11 @@ export default {
 					title: 'H. pylori Causing Peptic Ulcer Disease',
 					content: {
 						textBlock1: 'Infection',
-						textBlock2: 'H. pylori colonizes the lower part of the stomach',
+						textBlock2: 'H. pylori colonizes the lower part of the stomach.',
 						textBlock3: 'Inflammation',
-						textBlock4: 'H. pylori causes inflammation of the gastric mucosa. This could often occur without any symptoms',
+						textBlock4: 'H. pylori causes inflammation of the gastric mucosa. This could often occur without any symptoms.',
 						textBlock5: 'Ulceration',
-						textBlock6: 'Gastric inflammation may lead to duodenal or gastric ulcers. It may also lead to bleeding to perforation, which are severe peptic ulcer-related complications'
+						textBlock6: 'Gastric inflammation may lead to duodenal or gastric ulcers. It may also lead to bleeding to perforation, which are severe peptic ulcer-related complications.\n\n\n\n\n\n\n'
 					}
 				},
 				dosAndDonts: {
@@ -65,10 +65,11 @@ export default {
 					title: 'H. pylori Do\'s and Don\'ts',
 					content: {
 						textBlock1: 'When dealing with an H. pylori diagnosis, dietary adjustments are often advised to aid in treatment and facilitate the healing process.',
-						textBlock2: 'Foods to Avoid:',
-						textBlock3: '- Caffeinated products like tea, coffee, and chocolate can cause increased gastric juice secretion and stomach irritation.\n\n- Carbonated drinks may lead to pain and acid reflux.\n\n- Sour citrus fruits like lemon and orange can trigger stomach pain and heartburn.\n\n- Processed meats and canned foods containing preservatives and chemical additives can contribute to inflammation.\n\n- Fried foods, being high in fat, can hinder digestion.',
+						textBlock2: 'Do\'s and Don\'ts',
+						textBlock3: 'Don\'ts',
+						textBlock3: 'Do\'s',
 						textBlock4: 'Recommended:',
-						textBlock5: '- Include green vegetables such as cabbage, broccoli, and cauliflower, which are rich in fiber and promote digestive health.\n\n- Berries like blueberries, raspberries, and cranberries contain compounds that hinder H. pylori adhesion to the stomach lining.\n\n- Incorporate legumes like beans to enhance fiber and protein intake, supporting digestive health.\n\n- Opt for bananas, known for their gentle effect on the stomach and soothing properties.\n\n- Consider aloe vera for its soothing and anti-inflammatory benefits.\n\n- Utilize oregano, which possesses antimicrobial properties that may offer some relief.\n\n\n\n\n\n\n'
+						textBlock5: '\n\n\n\n\n'
 					}
 				},
 				facts: {
@@ -79,27 +80,27 @@ export default {
 							{
 								id: 1,
 								title: 'Did you know?',
-								description: 'It is the most common chronic bacterial infection in humans',
+								description: 'It is the most common chronic bacterial infection in humans.',
 							},
 							{
 								id: 4,
 								title: 'Did you know?',
-								description: 'H. pylori is the leading known risk factor for peptic and gastric ulcers',
+								description: 'H. pylori is the leading known risk factor for peptic and gastric ulcers.',
 							},
 							{
 								id: 6,
 								title: 'Did you know?',
-								description: 'H. pylori has been classified as type I (definite) cause of gastric cancer since 1994'
+								description: 'H. pylori has been classified as type I (definite) cause of gastric cancer since 1994.'
 							},
 							{
 								id: 5,
 								title: 'Did you know?',
-								description: 'The morbidity of H. pylori infection can be very high'
+								description: 'The morbidity of H. pylori infection can be very high.'
 							},
 							{
 								id: 2,
 								title: 'Did You know?',
-								description: 'Infection appears to be approximately two to three times higher in blacks and Hispanics compared to the white population'
+								description: 'Infection appears to be approximately two to three times higher in blacks and Hispanics compared to the white population.'
 							}
 						]
 					}
@@ -122,8 +123,8 @@ export default {
 					name: 'Medicament Acknoledgement',
 					title: 'Pylera Medicament Acknoledgement',
 					content: {
-						textBlock: 'This is a Medicament\n\n• Medicament is a product which affects your health and its consumption contrary to instructions is dangerous for you.\n\n• Follow strictly the doctor’s prescription, the method of use and the instructions of the zxdfsgcxvbznpharmacist who sold the medicament.\n\n• The doctor and the pharmacist are the experts in medicines, their benefits, and risks.\n\n• Do not by yourself interrupt the period of treatment prescribed for you.\n\n• Do not repeat the same prescription without consulting your doctor.\n\n• Keep all medicaments out of reach of children.\n\n• In the event of an adverse event occurring from any of NewBridge Pharmaceuticals Licensed products, kindly report them to the NewBridge Safety Mailbox',
-						confirmation: 'I have clearly read and understand the above',
+						textBlock: 'This is a Medicament\n\n• Medicament is a product which affects your health and its consumption contrary to instructions is dangerous for you.\n\n• Follow strictly the doctor’s prescription, the method of use and the instructions of the pharmacist who sold the medicament.\n\n• The doctor and the pharmacist are the experts in medicines, their benefits, and risks.\n\n• Do not by yourself interrupt the period of treatment prescribed for you.\n\n• Do not repeat the same prescription without consulting your doctor.\n\n• Keep all medicaments out of reach of children.\n\n• In the event of an adverse event occurring from any of NewBridge Pharmaceuticals Licensed products, kindly report them to the NewBridge Safety Mailbox',
+						confirmation: 'I have clearly read and understood the above',
 						button1: 'Proceed to view content',
 						alert: 'Please confirm that you have read and understood the above',
 					},
@@ -191,7 +192,7 @@ export default {
 							name: 'Drug Interactions',
 							title: 'Pylera Drug Interactions',
 							content: {
-								textBlock: 'Advise patients to report to their health-care provider the use of any other medications while taking PYLERA. The administration of any of the following drugs with PYLERA may result in clinically significant adverse reactions or insufficient drug efficacies:\n\n• Methoxyflurane\n\n• Disulfiram\n\n• Alcohol\n\n• Oral Contraceptives\n\n• Anticoagulants\n\n• Lithium\n\n• Antacids, Multivitamins or\n\nProducts\n\n• Busulfan\n\n• CYP inducers and CYP inhibitors',
+								textBlock: 'Advise patients to report to their health-care provider the use of any other medications while taking PYLERA. The administration of any of the following drugs with PYLERA may result in clinically significant adverse reactions or insufficient drug efficacies:\n\n• Methoxyflurane\n\n• Disulfiram\n\n• Alcohol\n\n• Oral Contraceptives\n\n• Anticoagulants\n\n• Lithium\n\n• Antacids, Multivitamins or Dairy Products\n\n• Busulfan\n\n• CYP inducers and CYP inhibitors',
 							},
 						},
 						contraindications: {
@@ -201,7 +202,7 @@ export default {
 								textBlock1: '• Alcohol,',
 								textBlock2: 'Abdominal cramps, nausea, vomiting, headaches, and flushing can occur; do not consume during therapy and for at least 3 days afterwards.',
 								textBlock3: '• Antacids,\n• Multivitamins,\n• Dairy Products\n',
-								textBlock4: 'These products should not be consumed concomitantly with PYLERA'
+								textBlock4: 'These products should not be consumed concomitantly with PYLERA\n\n\n\n\n\n'
 							}
 						},
 					}
@@ -230,7 +231,7 @@ export default {
 				},
 				timer: {
 					title: 'Next Dose In',
-					textBlock: 'Please start you treatment plan in the treatment section'
+					textBlock: 'Please start your treatment plan in the "Treatment Plan" section'
 				},
 				mealTimes: {
 					breakfast: 'Breakfast',

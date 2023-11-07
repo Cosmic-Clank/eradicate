@@ -1,6 +1,4 @@
-import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {  StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
 import LanguageNavigator from './navigations/LanguageNavigator';

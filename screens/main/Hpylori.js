@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
+import { View, TouchableOpacity, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { COLORS, ROUTES, SCREEN_CONTENT } from '../../constants';
 import IMAGES from '../../constants/images';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -29,101 +29,108 @@ function Hpylori({ navigation }) {
   };
 
   return (
-    <View style={styles.container}>
-      <Image source={IMAGES.logo} style={styles.logo} />
+    <ScrollView style={styles.scrollContainer}>
 
-      <TouchableOpacity
-        style={[
-          styles.button,
-        ]}
-        onPress={() => navigation.navigate(ROUTES.HPYLORI_CAUSES)}
-      >
-        <Text
-          style={[
-            styles.buttonText,
-          ]}
-        >
-          {SCREEN_CONTENT[language].hpylori.content.causes.name}
-        </Text>
-      </TouchableOpacity>
+      <View style={styles.container}>
+        <Image source={IMAGES.logo} style={styles.logo} />
 
-      <TouchableOpacity
-        style={[
-          styles.button,
-        ]}
-        onPress={() => navigation.navigate(ROUTES.HPYLORI_SYMPTOMS)}
-      >
-        <Text
+        <TouchableOpacity
           style={[
-            styles.buttonText,
+            styles.button,
           ]}
+          onPress={() => navigation.navigate(ROUTES.HPYLORI_CAUSES)}
         >
-          {SCREEN_CONTENT[language].hpylori.content.symptoms.name}
-        </Text>
-      </TouchableOpacity>
+          <Text
+            style={[
+              styles.buttonText,
+            ]}
+          >
+            {SCREEN_CONTENT[language].hpylori.content.causes.name}
+          </Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={[
-          styles.button,
-        ]}
-        onPress={() => navigation.navigate(ROUTES.HPYLORI_PEPTIC_ULCER)}
-      >
-        <Text
+        <TouchableOpacity
           style={[
-            styles.buttonText,
+            styles.button,
           ]}
+          onPress={() => navigation.navigate(ROUTES.HPYLORI_SYMPTOMS)}
         >
-          {SCREEN_CONTENT[language].hpylori.content.pepticUlcerDisease.name}
-        </Text>
-      </TouchableOpacity>
+          <Text
+            style={[
+              styles.buttonText,
+            ]}
+          >
+            {SCREEN_CONTENT[language].hpylori.content.symptoms.name}
+          </Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={[
-          styles.button,
-        ]}
-        onPress={() => navigation.navigate(ROUTES.HPYLORI_DOS_DONTS)}
-      >
-        <Text
+        <TouchableOpacity
           style={[
-            styles.buttonText,
+            styles.button,
           ]}
+          onPress={() => navigation.navigate(ROUTES.HPYLORI_PEPTIC_ULCER)}
         >
-          {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.name}
-        </Text>
-      </TouchableOpacity>
+          <Text
+            style={[
+              styles.buttonText,
+            ]}
+          >
+            {SCREEN_CONTENT[language].hpylori.content.pepticUlcerDisease.name}
+          </Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={[
-          styles.button,
-        ]}
-        onPress={() => navigation.navigate(ROUTES.HPYLORI_FACTS)}
-      >
-        <Text
+        <TouchableOpacity
           style={[
-            styles.buttonText,
+            styles.button,
           ]}
+          onPress={() => navigation.navigate(ROUTES.HPYLORI_DOS_DONTS)}
         >
-          {SCREEN_CONTENT[language].hpylori.content.facts.name}
-        </Text>
-      </TouchableOpacity>
-    </View>
+          <Text
+            style={[
+              styles.buttonText,
+            ]}
+          >
+            {SCREEN_CONTENT[language].hpylori.content.dosAndDonts.name}
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[
+            styles.button,
+          ]}
+          onPress={() => navigation.navigate(ROUTES.HPYLORI_FACTS)}
+        >
+          <Text
+            style={[
+              styles.buttonText,
+            ]}
+          >
+            {SCREEN_CONTENT[language].hpylori.content.facts.name}
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
+  scrollContainer: {
+    backgroundColor: COLORS.WHITE,
+  },
+
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     gap: 40,
     backgroundColor: COLORS.WHITE,
+    paddingVertical: 40,
   },
   logo: {
     width: '100%',
     height: 'auto',
     aspectRatio: 3, // Adjust the aspect ratio to fit your logo's dimensions
     resizeMode: 'contain',
-    marginBottom: 10,
   },
   button: {
     backgroundColor: COLORS.ACCENT,

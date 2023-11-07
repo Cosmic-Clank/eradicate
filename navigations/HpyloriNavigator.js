@@ -31,6 +31,8 @@ function HpyloriNavigator() {
             // headerShown: false,
             headerLeft: null,
             headerTitleAlign: 'center',
+
+
         }}>
             <Stack.Screen name={ROUTES.HPYLORI} component={HPYLORI} options={{
                 headerShown: false,
@@ -43,6 +45,9 @@ function HpyloriNavigator() {
             }} />
             <Stack.Screen name={ROUTES.HPYLORI_PEPTIC_ULCER} component={HPYLORI_PEPTIC_ULCER} options={{
                 title: SCREEN_CONTENT[language].hpylori.content.pepticUlcerDisease.title,
+                headerTitleStyle: {
+                    fontSize: 16,
+                },
             }} />
             <Stack.Screen name={ROUTES.HPYLORI_DOS_DONTS} component={HPYLORI_DOS_DONTS} options={{
                 title: SCREEN_CONTENT[language].hpylori.content.dosAndDonts.title,

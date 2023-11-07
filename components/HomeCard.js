@@ -8,7 +8,6 @@ const HomeCard = ({ imageSource, text }) => {
             <Image source={imageSource} style={styles.backgroundImage} />
             <View style={styles.overlay}>
                 <Text style={styles.text}>{text}</Text>
-                <Icon name='information' size={24} style={{color: '#fff'}} />
             </View>
         </View>
     );
@@ -20,6 +19,9 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         width: 200,
         aspectRatio: 1,
+        overflow: 'hidden',
+        elevation: 6,
+        borderRadius: 14,
     },
     backgroundImage: {
         resizeMode: 'cover',
@@ -27,10 +29,8 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     overlay: {
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-around',
         alignItems: 'center',
+        justifyContent: 'center',
         position: 'absolute',
         bottom: 0,
         left: 0,

@@ -36,6 +36,11 @@ function BottomNavigator() {
       headerStyle: {
         backgroundColor: COLORS.PRIMARY,
       },
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 24,
+        letterSpacing: 1.5,
+      },
       headerTitleAlign: 'center',
       headerTintColor: COLORS.WHITE,
       tabBarActiveTintColor: COLORS.WHITE,
@@ -48,26 +53,23 @@ function BottomNavigator() {
       tabBarHideOnKeyboard: true,
       tabBarIcon: ({ focused, color, size }) => {
         let iconName;
-        if (route.name === ROUTES.HOUSE) {
-          iconName = focused ? 'home-variant' : 'home-variant-outline'
-        } else if (route.name === ROUTES.DASHBOARD) {
-          iconName = focused ? 'view-dashboard' : 'view-dashboard-outline';
-        } else if (route.name === ROUTES.HPYLORI_NAVIGATOR) {
+        if (route.name === ROUTES.HPYLORI_NAVIGATOR) {
           iconName = focused ? 'bacteria' : 'bacteria-outline';
         } else if (route.name === ROUTES.PYLERA_NAVIGATOR) {
           iconName = focused ? 'pill' : 'pill';
         } else if (route.name === ROUTES.TREATMENT_NAVIGATOR) {
           iconName = focused ? 'timer' : 'timer-outline';
+        } else if (route.name === ROUTES.HOUSE) {
+          iconName = focused ? 'home-variant' : 'home-variant-outline'
+        } else if (route.name === ROUTES.DASHBOARD) {
+          iconName = focused ? 'view-dashboard' : 'view-dashboard-outline';
         }
         return <Icon name={iconName} size={35} color={color} />;
       }
     })}>
+
       <Tab.Screen name={ROUTES.HOUSE} component={HOUSE} options={{
         headerTitle: SCREEN_CONTENT[language].home.title,
-      }} />
-
-      <Tab.Screen name={ROUTES.DASHBOARD} component={DASHBOARD} options={{
-        headerTitle: SCREEN_CONTENT[language].dashboard.title,
       }} />
       <Tab.Screen name={ROUTES.HPYLORI_NAVIGATOR} component={HPYLORI_NAVIGATOR} options={{
         headerTitle: SCREEN_CONTENT[language].hpylori.title,
@@ -77,6 +79,9 @@ function BottomNavigator() {
       }} />
       <Tab.Screen name={ROUTES.TREATMENT_NAVIGATOR} component={TREATMENT_NAVIGATOR} options={{
         headerTitle: SCREEN_CONTENT[language].treatment.title,
+      }} />
+      <Tab.Screen name={ROUTES.DASHBOARD} component={DASHBOARD} options={{
+        headerTitle: SCREEN_CONTENT[language].dashboard.title,
       }} />
     </Tab.Navigator>
   );

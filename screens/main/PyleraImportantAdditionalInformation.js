@@ -3,6 +3,8 @@ import { View, TouchableOpacity, Text, StyleSheet, Image, Alert } from 'react-na
 import { COLORS, ROUTES, SCREEN_CONTENT } from '../../constants';
 import IMAGES from '../../constants/images';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+
 
 function PyleraImportantAdditionalInformation({ navigation }) {
   const [language, setLanguage] = useState('en');
@@ -73,6 +75,18 @@ function PyleraImportantAdditionalInformation({ navigation }) {
         </Text>
       </TouchableOpacity>
 
+      <View style={styles.buttons}>
+        <TouchableOpacity style={styles.invisible}>
+          <Text style={styles.buttonText}></Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate(ROUTES.PYLERA)}>
+          <Text style={{...styles.buttonText, color:COLORS.WHITE}}><Icon name='backup-restore' size={35} /></Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.invisible}>
+          <Text style={styles.buttonText}></Text>
+        </TouchableOpacity>
+      </View>
+
     </View>
   );
 };
@@ -80,7 +94,6 @@ function PyleraImportantAdditionalInformation({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
     gap: 40,
     backgroundColor: COLORS.WHITE,
@@ -103,6 +116,22 @@ const styles = StyleSheet.create({
     borderColor: COLORS.ACCENT,
     elevation: 18,
   },
+  buttons: {
+    position: 'absolute',
+    bottom: 10,
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  backButton: {
+    backgroundColor: COLORS.ACCENT,
+    borderRadius: 100,
+    width: 80,
+    height: 80,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   selectedButton: {
     borderColor: COLORS.BLACK,
   },
@@ -112,6 +141,10 @@ const styles = StyleSheet.create({
     color: COLORS.TEXTACCENT,
     textTransform: 'uppercase',
     textAlign: 'center',
+  },
+  invisible: {
+    width: 80,
+    height: 80,
   },
   selectedButtonText: {
   },

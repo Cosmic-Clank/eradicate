@@ -6,7 +6,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 const MAX_TEXT_LINES = 3; // Maximum number of lines to show initially
 
 const InformationCard = ({ fact, gradientColors }) => {
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = useState(true);
 
     const handleExpandToggle = () => {
         setExpanded(!expanded);

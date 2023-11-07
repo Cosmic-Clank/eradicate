@@ -3,6 +3,7 @@ import { View, TouchableOpacity, Text, StyleSheet, Image, Alert } from 'react-na
 import { COLORS, ROUTES, SCREEN_CONTENT } from '../../constants';
 import IMAGES from '../../constants/images';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ScrollView } from 'react-native-gesture-handler';
 
 function Pylera({ navigation }) {
   const [language, setLanguage] = useState('en');
@@ -25,6 +26,8 @@ function Pylera({ navigation }) {
 
 
   return (
+    <ScrollView style={styles.scrollContainer}>
+
     <View style={styles.container}>
       <Image source={IMAGES.logo} style={styles.logo} />
 
@@ -104,16 +107,21 @@ function Pylera({ navigation }) {
       </TouchableOpacity>
 
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
+  scrollContainer: {
+    backgroundColor: COLORS.WHITE,
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     gap: 40,
     backgroundColor: COLORS.WHITE,
+    paddingVertical: 40,
   },
   logo: {
     width: '100%',
